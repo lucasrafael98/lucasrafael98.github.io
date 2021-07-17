@@ -8,32 +8,34 @@
 	<script src="vendor/bootstrap.min.js"></script>    
 	<script src="vendor/popper.min.js"></script>
 	<link rel="stylesheet" href="index.css">
-	<title>ist424785</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>João Rafael</title>
 </head>
 <body>
-	<div class="container-fluid w-100 h-100">
-		<div class="row h-100">
-			<div class="h-100" id="side-bar">
-				<div class="row">
-					<img id="self-pic" src="images/pic.jpg">
-				</div>
-				<div class="row">
-					<div class="col" id="links">
-						<div class="row-2">
-							<h1>João Rafael</h1>               
-						</div>
-						<div class="w-10"></div>
-						<div class="row-1">
-							<a href="https://www.linkedin.com/in/joaolprafael/"><img class="top-img img-fluid" src="images/linkedin.png"></a>
-							<a href="https://github.com/lucasrafael98"><img class="top-img img-fluid" src="images/github.png" ></a>
-						</div>
-						<div class="row-1">
-							<img class="top-img img-fluid" src="images/compass-256.png"></img><span>Lisbon, Portugal</span>
-						</div>
+	<div class="container-fluid">
+		<div class="row min-vh-100 flex-column flex-md-row" id="side-bar">
+			<aside class="p-0 flex-shrink-1">
+				<nav class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start py-2">
+					<div class="collapse navbar-collapse ">
+						<ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+							<li class="nav-item" id="self-pic-li">
+								<img id="self-pic" src="images/pic.jpg">
+							</li>
+							<li class="nav-item links" >
+								<h1 class="name-header">João Rafael</h1>   
+							</li>
+							<li class="nav-item links" >
+								<a href="https://www.linkedin.com/in/joaolprafael/"><img class="top-img img-fluid" src="images/linkedin.png"></a>
+								<a href="https://github.com/lucasrafael98"><img class="top-img img-fluid" src="images/github.png" ></a>
+							</li>
+							<li class="nav-item location links" >
+								<img class="top-img img-fluid" src="images/compass-256.png"></img><span>Lisbon, Portugal</span>
+							</li>
+						</ul>
 					</div>
-				</div>
-			</div>
-			<div class="col h-100" id="page-content">
+				</nav>
+			</aside>
+			<main class="col py-3 flex-grow-1" id="page-content">
 				<div class="content-section" id="about">
 					<h3>About Me</h3>
 					<span>
@@ -125,98 +127,10 @@
 								</div>
 							</a>
 						</div>
-						<div class="card bg-dark text-white">
-							<img class="card-img" src="images/sites/ipm.png" alt="Card image">
-							<a href="http://web.tecnico.ulisboa.pt/ist424785/projs/IPM/">
-								<div class="card-img-overlay proj-card">
-									<h5 class="card-title">Restaurant entertainment device</h5>
-									<p class="card-text">
-										<object>
-											Restaurant entertainment system made with pure JS.
-											<br/> 
-											Made by Francisco Campaniço, me, and Matilde Ramos.
-											<br/>
-											<a href="http://web.tecnico.ulisboa.pt/ist424785/projs/CG/">Demo</a>
-										</object>
-									</p>
-								</div>
-							</a>
-						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 		</div>
-		<!-- <div class="container-fluid">
-			<div class="row w-100">
-				<div class="col h-100" id="top-bar">
-					<div class="col-2 col-sm-1">
-						<img id="self-pic" src="images/pic.jpg">
-					</div>
-					<div class="col">
-						<div class="row">
-							<div class="row">
-								<h1>João Rafael</h1>               
-							</div>
-							<div class="w-10"></div>
-							<div class="row">
-								<a href="https://www.linkedin.com/in/joaolprafael/"><img class="top-img img-fluid" src="images/linkedin.png" ></a>
-								<a href="https://github.com/lucasrafael98"><img class="top-img img-fluid" src="images/github.png" ></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col w-75 h-100" id="page-content">
-					<div class="content-section" id="about">
-						<h3>About Me</h3>
-						<span>I'm a Computer Science masters student at Instituto Superior Técnico, Lisboa, Portugal.</span>
-					</div>
-					<div class="content-section" id="projs">
-						<h3>Projects</h3>
-						<div class="card-group" id="proj-cards">
-							<div class="card bg-dark text-white">
-								<img class="card-img" src="images/sites/ipm.png" alt="Card image">
-								<a href="http://web.tecnico.ulisboa.pt/ist424785/IPM/">
-									<div class="card-img-overlay proj-card">
-										<h5 class="card-title">Restaurant entertainment device</h5>
-									</div>
-								</a>
-							</div>
-							<div class="card bg-dark text-white">
-								<img class="card-img" src="images/sites/cg.png" alt="Card image">
-								<a href="http://web.tecnico.ulisboa.pt/ist424785/CG/">
-									<div class="card-img-overlay proj-card">
-										<h5 class="card-title">Three.js-based car racing game</h5>
-									</div>
-								</a>
-							</div>
-							<div class="w-100"></div>
-							<div class="card bg-dark text-white">
-								<img class="card-img" src="images/sites/avt.png" alt="Card image">
-								<a class="card-img-overlay proj-card" href="http://web.tecnico.ulisboa.pt/ist424785/AVT/web/" style="text-decoration:none;">
-									<h5 class="card-title">OpenGL/WebGL-based game</h5>
-									<p class="card-text">
-										<object>
-											<a href="http://web.tecnico.ulisboa.pt/ist424785/AVT/mobile/">Mobile VR Version</a>
-											| <a href="https://github.com/lucasrafael98/TVA1819-uMachines">Source</a>
-										</object>
-									</p>
-								</a>
-							</div>
-							<div class="card bg-dark text-white">
-								<img class="card-img" src="images/sites/vi.png" alt="Card image">
-								<a class="card-img-overlay proj-card" href="http://web.tecnico.ulisboa.pt/ist424785/VI" style="text-decoration:none;">
-									<h5 class="card-title">D3-based data visualisation</h5>
-									<p class="card-text">
-										<object>
-											<a href="https://github.com/lucasrafael98/IV1819-eSports">Source</a>
-										</object>
-									</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
+	</div>
 	</body>
 	</html>

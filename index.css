@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100%;
-    --sidebarwidth: 10%
+    --sidebarwidth: 12%
 }
 
 h1 {font-size:1.8rem;}
@@ -19,24 +19,14 @@ a{color: rgb(214, 211, 255)}
 a:hover{color: rgb(182, 177, 255)}
 a:visited{color: rgb(182, 177, 255)}
 
-#links div{
-    text-align: center;
-    margin: 5% 0 10% 0;
-}
-
-#side-bar{
-    width: var(--sidebarwidth) !important;
-    overflow-y: hidden;
-    overflow-x: hidden;
+aside{
     background-color: rgb(63, 0, 105);
     background-image: url("images/trianglify.png");
     background-size: 100%;
 }
+
 #self-pic{
     align-items: center;
-    margin: 2vh auto 0 auto;
-    width: 70%;
-    height: auto;
     border-radius: 50%;
 }
 
@@ -48,7 +38,6 @@ a:visited{color: rgb(182, 177, 255)}
 }
 
 #page-content{
-    width: calc(100% - var(--sidebarwidth));
     padding: 2% 5% 0 5%;
     overflow-y: auto;
 }
@@ -60,21 +49,62 @@ a:visited{color: rgb(182, 177, 255)}
     margin-bottom: 2vh;
 }
 
-/* @media (min-width: 544px) {  
-    h1 {font-size:1.5rem;}
-    #top-bar{background-size: 150%;}
-    #page-content{margin:1.5vw 25% 1.5vw 25%;}
+@media screen and (max-width: 600px) {  
+    #img-fastgeo:focus:hover{
+        padding-bottom: 300px;
+        transition: 0.2s;
+    }
+    #self-pic-li #self-pic{
+        height: 10vh;
+    }
+    .links{
+        padding: 2% 0 0 0;
+    }
+    .location{
+        display: none;
+    }
+    .links{
+        text-align: center;
+    }
+    .name-header{
+        padding-top: 5%;
+    }
+    #img-fastgeo{
+        height: 170px;
+        object-fit: cover;
+    }
 }
 
-@media (min-width: 768px) {  
-    h1 {font-size:2rem;}
-    #top-bar{background-size: 120%;}
+@media screen and (min-width: 768px) {
+    #self-pic-li{
+        height: auto;
+    }
+    #self-pic{
+        height: auto;
+        width: 100%;
+        margin: 1.5vh auto 0 auto;
+    }
+    aside{
+        max-width: calc(var(--sidebarwidth) * 1.2) ;
+    } 
+    #img-fastgeo{
+        height: 350px;
+        object-fit: cover;
+    }
+    .links{
+        text-align: center;
+        margin: 5% 0 1% 0;
+    }
 }
 
-@media (min-width: 992px) { 
-    h1 {font-size:2.5rem;}
-    #top-bar{background-size: 100%;}
-} */
+@media screen and (min-width: 992px){
+    aside{
+        max-width: var(--sidebarwidth);
+    } 
+    #page-content{
+        width: calc(100% - var(--sidebarwidth));
+    }
+}
 
 .proj-card{
     -moz-transition: all 0.7s ease;
@@ -82,22 +112,17 @@ a:visited{color: rgb(182, 177, 255)}
     transition: all 0.7s ease;
 }
 
-.proj-card:hover{
+.proj-card:hover :focus{
     cursor: pointer;
     background: rgba(0,0,0,.6);
 }
-.proj-card:hover p{
+.proj-card:hover:focus p{
     opacity: 1;
 }
 .proj-card p{z-index: 2;transition: all 1s ease; opacity: 0;}
 .proj-card h5{color:white; text-shadow: 1px 1px 2px black;}
 
-#proj-card-fastgeo:hover{
+#proj-card-fastgeo:hover:focus{
     cursor: default;
     background: rgba(0,0,0,.8);
-}
-
-#img-fastgeo{
-    height: 350px;
-    object-fit: cover;
 }
