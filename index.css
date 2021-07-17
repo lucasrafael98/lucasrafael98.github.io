@@ -8,7 +8,7 @@ body {
     color:#fff;
     font-family: 'Verdana', sans-serif;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     height: 100%;
     --sidebarwidth: 12%
 }
@@ -25,9 +25,17 @@ aside{
     background-size: 100%;
 }
 
+.tech-img{
+    object-fit:fill;
+}
+
 #self-pic{
     align-items: center;
     border-radius: 50%;
+}
+
+#tech-cards{
+    text-align: center;
 }
 
 .top-img{
@@ -39,7 +47,6 @@ aside{
 
 #page-content{
     padding: 2% 5% 0 5%;
-    overflow-y: auto;
 }
 
 .content-section{
