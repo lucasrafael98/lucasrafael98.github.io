@@ -50,7 +50,7 @@ aside{
 }
 
 @media screen and (max-width: 600px) {  
-    #img-fastgeo:focus:hover{
+    #img-fastgeo:hover{
         padding-bottom: 300px;
         transition: 0.2s;
     }
@@ -112,17 +112,17 @@ aside{
     transition: all 0.7s ease;
 }
 
-.proj-card:hover :focus{
+.proj-card:hover {
     cursor: pointer;
     background: rgba(0,0,0,.6);
 }
-.proj-card:hover:focus p{
+.proj-card:hover p{
     opacity: 1;
 }
 .proj-card p{z-index: 2;transition: all 1s ease; opacity: 0;}
 .proj-card h5{color:white; text-shadow: 1px 1px 2px black;}
 
-#proj-card-fastgeo:hover:focus{
+#proj-card-fastgeo:hover{
     cursor: default;
     background: rgba(0,0,0,.8);
 }
