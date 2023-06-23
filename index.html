@@ -13,41 +13,42 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row min-vh-100 flex-column flex-md-row" id="side-bar">
-			<aside class="p-0 flex-shrink-1">
-				<nav class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start py-2">
-					<div class="collapse navbar-collapse ">
-						<ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-							<li class="nav-item" id="self-pic-li">
-								<img id="self-pic" src="images/pic.jpg">
-							</li>
-							<li class="nav-item links" >
+		<div class="row flex-column flex-md-row">
+			<aside>
+				<nav class="navbar navbar-expand navbar-dark flex-md-column flex-row align-items-start py-2 px-6 w-100">
+					<div class="row w-100">
+						<div class="nav-item col-4 col-sm-2" id="self-pic-li">
+							<img id="self-pic" src="images/pic.jpg">
+						</div>
+						<div class="nav-item col-5 col-sm-6 col-md col-lg my-2 mx-lg-3 mx-md-1 mx-sm-4" >
+							<div class="row">
 								<h1 class="name-header">João Rafael</h1>   
-							</li>
-							<li class="nav-item links" >
-								<a href="https://www.linkedin.com/in/joaolprafael/"><img class="top-img img-fluid" src="images/linkedin.png"></a>
-								<a href="https://github.com/lucasrafael98"><img class="top-img img-fluid" src="images/github.png" ></a>
-							</li>
-							<li class="nav-item location links" >
-								<img class="top-img img-fluid" src="images/compass-256.png"></img><span>Lisboa, Portugal</span>
-							</li>
-						</ul>
+							</div>
+							<div class="row">
+								<a href="https://www.linkedin.com/in/joaolprafael/"><img class="top-img img-fluid mr-2" src="images/linkedin.png"></a>
+								<a href="https://github.com/lucasrafael98"><img class="top-img img-fluid mr-2" src="images/github.png" ></a>
+							</div>
+						</div>
 					</div>
 				</nav>
 			</aside>
-			<main class="col py-3 flex-grow-1" id="page-content">
+			<main class="col py-3 flex-grow-1 mx-6 mx-xs-1" id="page-content">
 				<div class="content-section" id="about">
-					<h3>About Me</h3>
 					<span>
-						Back-end developer working with Go at <a href="https://www.create.pt/">Create IT</a>.
-						<br/>
+						Senior backend developer working with Go at <a href="https://www.create.pt/">Create IT</a>.
 						I have a Master's degree from <a href="https://tecnico.ulisboa.pt/en/">Instituto Superior Técnico</a>, 
 						specialized in Interaction and Visualization, as well as Intelligent Systems. 
-						<br/>
 						I'm a Portuguese native, as well as a 
 						<a href="https://www.cambridgeenglish.org/exams-and-tests/proficiency/">C2-certified</a> 
 						(native-level) English speaker. I am also an <a href="https://www.credly.com/badges/640d2ef9-86f5-4cb4-aebf-921fc1c5fe81/linked_in_profile">AWS Certified Cloud Practicioner</a>.
 					</span>
+				</div>
+				<div class="content-section">
+					<h3>Projects</h3>
+					<p>
+						go-anon: a simple struct anonymiser for logging.
+						<a href="https://github.com/lucasrafael98/go-anon">Source</a>
+					</p>
 				</div>
 				<div class="content-section" id="projs">
 					<h3>University Projects</h3>

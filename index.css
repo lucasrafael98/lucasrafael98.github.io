@@ -5,12 +5,11 @@ html{
 
 body {
     background-color: #1f2124;
-    color:#fff;
-    font-family: 'Verdana', sans-serif;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     height: 100%;
-    --sidebarwidth: 12%
+    --sidebarheight: 12%
 }
 
 h1 {font-size:1.8rem;}
@@ -22,7 +21,7 @@ a:visited{color: rgb(182, 177, 255)}
 aside{
     background-color: rgb(63, 0, 105);
     background-image: url("images/trianglify.png");
-    background-size: 100%;
+	width: 100%;
 }
 
 .card-no-border{
@@ -33,9 +32,15 @@ aside{
     object-fit:fill;
 }
 
+
+#self-pic-li{
+	height: auto;
+}
+
 #self-pic{
     align-items: center;
     border-radius: 50%;
+	width: 10vh;
 }
 
 #tech-cards{
@@ -46,12 +51,9 @@ aside{
     height:3.5vh;
     width:3.5vh;
     cursor: pointer;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
-#page-content{
-    padding: 2% 5% 0 5%;
-}
 
 .content-section{
     margin-bottom: 3vh;
@@ -68,15 +70,6 @@ aside{
     #self-pic-li #self-pic{
         height: 10vh;
     }
-    .links{
-        padding: 2% 0 0 0;
-    }
-    .location{
-        display: none;
-    }
-    .links{
-        text-align: center;
-    }
     .name-header{
         padding-top: 5%;
     }
@@ -84,20 +77,12 @@ aside{
         height: 170px;
         object-fit: cover;
     }
+	main{
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    #self-pic-li{
-        height: auto;
-    }
-    #self-pic{
-        height: auto;
-        width: 100%;
-        margin: 1.5vh auto 0 auto;
-    }
-    aside{
-        max-width: calc(var(--sidebarwidth) * 1.2) ;
-    } 
     #img-fastgeo{
         height: 350px;
         object-fit: cover;
@@ -106,15 +91,22 @@ aside{
         text-align: center;
         margin: 5% 0 1% 0;
     }
+	main{
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 992px){
     aside{
-        max-width: var(--sidebarwidth);
+        max-height: var(--sidebarheight);
+		padding: 0 30% 0 30%;
     } 
     #page-content{
-        width: calc(100% - var(--sidebarwidth));
+        height: calc(100% - var(--sidebarheight));
     }
+	#page-content{
+		padding: 2% 30% 0 30%;
+	}
 }
 
 .proj-card{
